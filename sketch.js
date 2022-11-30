@@ -49,6 +49,5 @@ function segment(x,y,b) { //this places the ball and second line//
   push();
   translate(x, y);
   rotate(b);
-  line(0, 0, segLength, 0);
   pop();
 }
