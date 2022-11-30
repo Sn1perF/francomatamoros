@@ -9,7 +9,7 @@ function setup() {
   strokeWeight(20.0);
   stroke(255, 100);
 }
-  // this setup locks the backround 
+  // this setup locks the backround and creates the size //
 
 function draw() {
   background("#33ffbb");
@@ -28,7 +28,7 @@ function draw() {
   textAlign(CENTER);
   text("hello there",200,diam1,diam1);//this allows the hello come into the screen//
   }
-//this tells the line and ball to follow the cursor//
+//this tells the ball to follow the cursor//
   dx =mouseX- x;
   dy =mouseY- y;
   angle1 =atan2(dy,dx);
@@ -45,7 +45,7 @@ function mousePressed(){ //allows the balls to increase size and allows the text
   diam1=diam1+5;
   }
 }
-function segment(x,y,b) { //this places the ball and second line//
+function segment(x,y,b) { //this places the ball //
   push();
   translate(x, y);
   rotate(b);
